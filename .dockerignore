@@ -1,0 +1,8 @@
+node_modules
+npm-debug.log
+
+# Ignore tests
+**/test
+
+# Ignore files starts with dot (.gitlan-ci.yml, .eslintrc.json, etc...) 
+.*

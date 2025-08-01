@@ -1,0 +1,41 @@
+display_information:
+  name: GitLab MR reactions
+  description: Update Slack messages with GitLab Merge Request status changes.
+  background_color: "#b57000"
+  long_description: A Slack bot app that can listen to Slack messages containing GitLab merge-request links. Keeps the message updated when the MR status (review, approved, merged) changes. Or simply auto-assigns you as a reviewer from Slack if 👀 react on it.
+features:
+  bot_user:
+    display_name: GitLab MR reactions
+    always_online: true
+  unfurl_domains:
+    - gitlab.com
+oauth_config:
+  scopes:
+    bot:
+      - channels:history
+      - channels:read
+      - chat:write
+      - groups:history
+      - im:history
+      - mpim:history
+      - reactions:read
+      - reactions:write
+      - users:read
+      - users:read.email
+      - links:read
+      - links:write
+settings:
+  event_subscriptions:
+    bot_events:
+      - link_shared
+      - message.channels
+      - message.groups
+      - message.im
+      - message.mpim
+      - reaction_added
+      - reaction_removed
+  interactivity:
+    is_enabled: true
+  org_deploy_enabled: false
+  socket_mode_enabled: true
+  token_rotation_enabled: false

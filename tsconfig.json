@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "lib": ["es2023"],
+    "module": "NodeNext",
+    "moduleResolution": "Node16",
+    "target": "ES2022",
+
+    "outDir": "./dist",
+    "allowJs": true,
+    "strict": true,  
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "onLinkShared": {
+    "autoAssignAuthorAsAssignee": true,
+    "unfrulLinkInComposer": true,
+    "unfurlLinkInMessages": true
+  },
+  "onReactionAdded": {
+    "assignReviewer": {
+      "enabled": true,
+      "reaction": "eyes"
+    }
+  },
+  "onReactionRemoved": {
+    "unassignReviewer": {
+      "enabled": true,
+      "reaction": "eyes"
+    }
+  },
+  "gitlabWebhooks": {
+    "enabled": true,
+    "mergeRequest": {
+      "updateUnfurls": true,
+      "addReactions": true,
+      "useReactions": {
+        "onApproved": "approved2",
+        "onMerged": "merged",
+        "onClosed": "octagonal_sign"
+      }
+    }
+  },
+  "channelsOnly": []
+}
